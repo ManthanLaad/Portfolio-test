@@ -60,10 +60,9 @@ nav {
   }
 }
 
-.active:hover {
+.active {
   background: $gray-text;
   color: white;
-  transition: all .5s ease;
   padding: 1rem 3rem;
   border-radius: 2rem;
 }
