@@ -309,8 +309,116 @@ nav ul {
           flex: 1 1 40rem;
 }
 
+.form-wrapper {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+.form-wrapper form {
+  padding: 3rem 10rem;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2rem;
+}
+
+.form-wrapper form input, .form-wrapper form textarea {
+  margin: 2rem;
+}
+
+.form-wrapper form input:focus, .form-wrapper form textarea:focus {
+  outline: 2px solid black;
+}
+
+.form-wrapper form textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+.form-wrapper form button {
+  width: 100%;
+  padding: 2rem;
+  background: #154353;
+  color: white;
+}
+
+.form-wrapper form button:focus {
+  background: #537d91;
+}
+
+footer {
+  background: #154353;
+  color: white;
+  min-height: 10vh;
+  padding: 0% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer h4 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
 @media screen and (max-width: 1334px) {
   html {
+    margin: 0;
+    padding: 0;
     font: size 53%;
   }
   .splash {
@@ -395,6 +503,13 @@ nav ul {
   .elena-joy img, .travelly img {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 611px) {
+  form {
+    padding: 0;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
