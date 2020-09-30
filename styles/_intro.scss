@@ -31,7 +31,7 @@ nav {
     font-size: 8rem;
     padding-top: 2rem;
     background: $gradient;
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
   }
@@ -60,9 +60,10 @@ nav {
   }
 }
 
-.active {
+.active:hover {
   background: $gray-text;
   color: white;
+  transition: all .5s ease;
   padding: 1rem 3rem;
   border-radius: 2rem;
 }
@@ -70,4 +71,51 @@ nav {
 .intro-text,
 .intro-images {
   flex: 1 1 40rem;
+}
+
+#plant-left{
+  animation: plant 1.5s ease infinite alternate;
+}
+#plant-right{
+  animation: plant 1.5s ease infinite alternate .5s;
+}
+
+#me{
+  transform-origin: bottom;
+  animation: me 1s infinite alternate;
+}
+
+#clock-arrow{
+  animation: clock 1.5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+
+@keyframes clock{
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes me{
+  from{
+    transform: rotateZ(-5deg);
+  }
+  to{
+    transform: rotateZ(5deg);
+  }
+}
+
+@keyframes plant{
+  from{
+    transform: translateY(0%);
+
+  }
+  to{
+    transform: translateY(-30%);
+
+  }
 }
