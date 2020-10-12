@@ -22,7 +22,7 @@ nav {
 }
 
 .intro {
-  min-height: 90vh;
+  min-height: 80vh;
   width: 90%;
   margin: auto;
   flex-wrap: wrap;
@@ -31,6 +31,7 @@ nav {
     font-size: 8rem;
     padding-top: 2rem;
     background: $gradient;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -72,49 +73,47 @@ nav {
   flex: 1 1 40rem;
 }
 
-#plant-left{
+#plant-left {
   animation: plant 1.5s ease infinite alternate;
 }
-#plant-right{
-  animation: plant 1.5s ease infinite alternate .5s;
+#plant-right {
+  animation: plant 1.5s ease infinite alternate 0.5s;
 }
 
-#me{
+#me {
   transform-origin: bottom;
   animation: me 1s infinite alternate;
 }
 
-#clock-arrow{
+#clock-arrow {
   animation: clock 1.5s infinite linear;
   transform-box: fill-box;
   transform-origin: bottom;
 }
 
-@keyframes clock{
-  from{
+@keyframes clock {
+  from {
     transform: rotateZ(0deg);
   }
-  to{
+  to {
     transform: rotateZ(360deg);
   }
 }
 
-@keyframes me{
-  from{
+@keyframes me {
+  from {
     transform: rotateZ(-5deg);
   }
-  to{
+  to {
     transform: rotateZ(5deg);
   }
 }
 
-@keyframes plant{
-  from{
+@keyframes plant {
+  from {
     transform: translateY(0%);
-
   }
-  to{
+  to {
     transform: translateY(-30%);
-
   }
 }
