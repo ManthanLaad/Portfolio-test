@@ -3,7 +3,7 @@ $header2: 4rem;
 $header3: 2.5rem;
 $header4: 2rem;
 $text: 2.5rem;
-$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$gradient: linear-gradient(to left, #38d39f, #38a4d3);
 $background-color: #154353;
 $gray-text: #2c2c2c;
 
@@ -48,7 +48,6 @@ $gray-text: #2c2c2c;
     width: 100%;
   }
   nav {
-    margin: 2rem;
     .logo {
       @include flex(center, center, column);
       flex: 1 1 25rem;
@@ -79,6 +78,9 @@ $gray-text: #2c2c2c;
       width: 100%;
       height: 100%;
     }
+  }
+  .last {
+    padding-bottom: 5vh;
   }
 }
 
