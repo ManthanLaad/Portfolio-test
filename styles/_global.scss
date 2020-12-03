@@ -8,8 +8,8 @@ html {
   font-size: 62.5%;
 }
 
-body{
-  font-family: "Montserrat",sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -45,4 +45,17 @@ ul {
 a {
   color: $gray-text;
   text-decoration: none;
+}
+
+footer {
+  ul {
+    li {
+      a {
+        img {
+          min-height: 4rem;
+          min-width: 4rem;
+        }
+      }
+    }
+  }
 }
