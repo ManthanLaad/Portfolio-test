@@ -5,7 +5,7 @@
 
 nav {
   @include flex(space-between, center, row);
-  min-height: 10vh;
+  height: 10vh;
   width: 60%;
   flex-wrap: wrap;
   .logo {
@@ -22,7 +22,7 @@ nav {
 }
 
 .intro {
-  min-height: 80vh;
+  height: 80vh;
   width: 90%;
   margin: auto;
   flex-wrap: wrap;
